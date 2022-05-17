@@ -1,3 +1,9 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 .home
 {
     display: flex;
@@ -13,4 +19,37 @@
 .input-container
 {
     gap: 10px;
+
+}
+.logo
+{
+    margin-left: 10% ;
+    font-size: 50px;
+}
+.links-container
+{
+    display: flex;
+    gap: 25px;
+    margin-left: 25%;
+}
+.links-container a
+{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    transition: font-size 2ms;
+}
+.links-container a:hover
+{
+    font-size: 40px;
+    color: black;
+
+}
+header
+{
+    width: 100%;
+    background-color: cadetblue;
+    display: flex;
+    margin-bottom: 100px;
+
 }
