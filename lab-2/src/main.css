@@ -1,0 +1,16 @@
+.home
+{
+    display: flex;
+    flex-direction: column ;
+}
+.flex-column
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input-container
+{
+    gap: 10px;
+}
