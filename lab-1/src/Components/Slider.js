@@ -33,26 +33,16 @@ export default class Slider extends Component {
 
     next = () => {
 
-        if (this.state.currentImage >= this.numberOfImages) {
-            return
-        } else {
-            let nextImage = this.state.currentImage + 1
-            this.setState({
-                currentImage: nextImage
-            })
-        }
+       this.state.currentImage=(this.state.currentImage >= this.numberOfImages)? this.numberOfImages:this.state.currentImage+1
+        this.setState({
+            currentImage:this.state.currentImage
+        })
     }
     previous = () => {
-        console.log(this.state.currentImage)
-        if (this.state.currentImage <= 1) {
-            return
-        } else {
-
-            let prevImage = this.state.currentImage - 1
-            this.setState({
-                currentImage: prevImage
-            })
-        }
+        this.state.currentImage=(this.state.currentImage <= 1)?1:this.state.currentImage - 1;
+        this.setState({
+            currentImage: this.state.currentImage
+        })
     }
     slide = () => {
         this.interval=setInterval(()=>{
