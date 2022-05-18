@@ -169,7 +169,31 @@ header
 ::-webkit-scrollbar {
     width: 20px;
 }
-
+.about-container
+{
+    width: 50%;
+    background-color: #F7DBAB;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 300px;
+    padding: 20px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.about-container p
+{
+    padding: 10px;
+    font-size: 20px;
+}
+.error-container
+{
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+}
 /* Track */
 ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey;
@@ -186,3 +210,4 @@ header
 ::-webkit-scrollbar-thumb:hover {
     background: #38A58E;
 }
+

@@ -10,7 +10,7 @@ export default class Home extends Component
                 {
                     name: "Muhammed Ahmed",
                     id: "11",
-                    age: "aa"
+                    age: "13"
                 }
             ],
         }
