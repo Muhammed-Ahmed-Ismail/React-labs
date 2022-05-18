@@ -1,8 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
 *
 {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+body
+{
+    background: url("../public/images/school-hallway-interior-with-doors-lockers/1269.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 .home
 {
@@ -16,11 +24,8 @@
     justify-content: center;
     align-items: center;
 }
-.input-container
-{
-    gap: 10px;
 
-}
+
 .logo
 {
     margin-left: 10% ;
@@ -48,8 +53,136 @@
 header
 {
     width: 100%;
-    background-color: cadetblue;
+    background-color: #38A58E;
     display: flex;
     margin-bottom: 100px;
 
+}
+.register
+{
+    width: 300px;
+    height: 300px ;
+    margin: auto;
+    background: #F68D3A;
+    gap: 50px;
+    border-radius: 10px;
+    box-shadow:  darkgray ;
+    font-family: 'Lexend Deca', sans-serif}
+.register input
+{
+    height: 30px;
+    padding-left: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1em;
+}
+.register input[type="button"]
+{
+    width: 50%;
+    color: black;
+}
+.input-container
+{
+    gap: 10px;
+
+}
+.std-cards-container
+{
+    width: 80%;
+    background-color: #F7DBAB;
+    overflow: auto;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.list-container
+ {
+
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+ }
+
+.std-cards-container ul
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.std-cards-container ul li
+{
+    width: 40%;
+}
+.std-card
+{
+    width: 100%;
+    background-color: #38A58E;
+    border-radius: 10px;
+    display: flex;
+    padding: 20px;
+    gap: 10%;
+}
+.std-card .info-container
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 20px;
+}
+.std-card .image-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.avatar-container img
+{
+    width: 120px;
+    border-radius: 50%;
+    border: gray solid 2px ;
+}
+
+.details-card-container
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #38A58E;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #38A58E;
 }

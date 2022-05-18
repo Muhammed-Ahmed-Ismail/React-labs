@@ -1,23 +1,18 @@
-import {NavLink} from "react-router-dom";
+import StudentCard from "./StudentCard";
 
-let StudentsList=({studentsList})=>{
+let StudentsList = ({studentsList}) => {
     console.log(studentsList)
-    let cards=studentsList.map((student=>
-        <NavLink to={'/student/'+student.id}>
-         <li>
-        <div class="std-card">
-        <p> name: {student.name}</p>
-        <p> id: {student.id}</p>
-        <p> age: {student.age}</p>
-        </div>
-        </li>
-        </NavLink>
+    let cards = studentsList.map((student =>
+            <StudentCard student={student} key={student.id}/>
     ))
-    return(
+    return (
+
         <div className={"std-cards-container"}>
-            <ul>
-                {cards}
-            </ul>
+            <div className={"list-container"}>
+                <ul>
+                    {cards}
+                </ul>
+            </div>
         </div>
     )
 }
